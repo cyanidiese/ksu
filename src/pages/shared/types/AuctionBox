@@ -1,0 +1,17 @@
+export enum AuctionStatuses {
+    OPEN = 'open',
+    PRESALE = 'presale',
+    PREVIEW = 'preview',
+    CLOSED = 'closed',
+}
+
+export interface IAuctionBox {
+    id: number,
+    key: string,
+    isFundraiser: boolean,
+    name: string,
+    organizationName: string,
+    totalItems: number,
+    status: AuctionStatuses,
+    vanityAddress: string
+};
